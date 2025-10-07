@@ -1,0 +1,5 @@
+__pycache__/
+# Python GUI サンプルの exe 化で生成される成果物を除外
+python/build/
+python/dist/
+python/*.spec
