@@ -87,10 +87,10 @@ class Parser:
         self._need = 0                      # 次に読み込むべきバイト数
 
     def reset(self) -> None:
-        """内部状態をリセットして STX 探索からやり直す.
+        """内部状態をリセットして STX 探索からやり直す
 
         エラー発生時や新しいフレームの解析を開始する際に呼び出します。
-        ""
+        """
         self._state = self._State.SEEK_STX
         self._buffer.clear()
         self._need = 0

@@ -88,7 +88,7 @@ class Tr3LanClient:
 
         Returns:
             bool: ソケットが接続されていればTrue、そうでなければFalse。
-        ""
+        """
         return self._socket is not None
 
     # ---------------------------------------------
